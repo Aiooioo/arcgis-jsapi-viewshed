@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ArcGIS API for JavaScript Viewshed 3D</title>
+  <link rel="stylesheet" href="https://localhost:8443/jsapi/4.21/esri/css/main.css">
+  <style>
+    html,
+    body,
+    #viewDiv {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+    #selection {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      right: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .esri-button {
+      max-width: 300px;
+      margin-left: 5px;
+    }
+
+    .esri-button--secondary {
+      background-color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="viewDiv">
+    <div id="selection">
+      <button id="scenarioA" class="esri-button">Stop</button>
+      <button id="scenarioB" class="esri-button esri-button--secondary">
+        备用
+      </button>
+    </div>
+  </div>
+  <script src="./dojoConfig.js"></script>
+  <script src="https://localhost:8443/jsapi/4.21/init.js"></script>
+  <script src="./draw-airplane.js"></script>
+  <!-- <script src="./test-accessor.js"></script> -->
+</body>
+
+</html>
